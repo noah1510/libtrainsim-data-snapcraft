@@ -38,7 +38,7 @@ parts:
     
 
 slots:
-  libtrainsim_data:
+  _slot_name_:
     interface: content
     content: data
     source:
