@@ -1,0 +1,1 @@
+# libtrainsim-data-snapcraft
