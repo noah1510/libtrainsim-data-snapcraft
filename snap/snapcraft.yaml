@@ -18,8 +18,7 @@ parts:
     source-type: git
     source: https://git.thm.de/bahn-simulator/simulator-data.git
     override-build: |
-        curl -L "https://packagecloud.io/github/git-lfs/gpgkey" 2> /dev/null | apt-key add - &>/dev/null
-        curl 'https://packagecloud.io/install/repositories/github/git-lfs/config_file.list?os=Ubuntu&dist=focal&source=script' > /etc/apt/sources.list.d/git-lfs.list
+        curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
         apt-get update
         apt-get install git-lfs
         git lfs install
